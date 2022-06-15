@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+li
+{
+    list-style-type: none;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/****************NAV********************/
+
+nav
+{
+    width: 100%;
+    padding-bottom: 90px;
+    margin-top: 30px;
+}
+nav ul
+{
+    display: flex;
+    float: right;
+    margin-right: 120px;
+}
+nav h1
+{
+    float: left;
+    font-family: 'Rancho', cursive;
+    color: #0065FC;
+    font-size: 37px;
+    font-weight: 100;
+    margin: 10px 0 0 70px;
+}
+nav a:hover
+{
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+nav a
+{
+    padding-top: 43px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*********************HEADER****************/
+
+#en-tête
+{
+    margin-left: 50px;
+}
+#en-tête p
+{
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+#form
+{
+    display: flex;
+}
+input
+{
+    border-color: rgba(14, 12, 12, 0.04);
+    border-right: none;
+    border-left: none;
+    font-size: 18px;
+}
+::-webkit-input-placeholder
+{
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+    padding: 15px;
+}
+button
+{
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 16px 16px 0;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+#localisation
+{
+    border-radius: 16px 0 0 16px;
+    border-color: rgba(14, 12, 12, 0.1);
+    border: none;
+    color: black;
+    background-color: #F2F2F2;
+    font-size: 17px;
+    padding: 17px 19px 17px 19px;
+}
+i
+{
+    border: 2px solid black;
+    border-radius: 200%;
+    border: none;
+    background-color: #F2F2F2;
+    padding: 15px;
+    margin-left: -3px;
+    color: #0065FC;
+    font-size: 15px;
+    background-color: #DEEBFF;
+}
+#IconFamille
+{
+    padding: 15px 18px 15px 20px;
+}
+
+/*************FILTRES************/
+
+#filtres
+{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    align-items: center;
+    font-size: large;
+    margin: 40px 0 40px -30px;
+}
+
+.border
+{
+    border: 2.4px solid rgba(128, 128, 128, 0.3);
+    border-radius: 30px;
+    border-left: none;
+    margin: 5px 15px 5px 15px;
+}
+.border a
+{
+    padding: 5px 25px 5px 10px;
+}
+#filtres i
+{
+    margin: -2px;
+    font-size: 20px;
+}
+.border:hover
+{
+    text-shadow: 0 0 5px #0065FC;
+    background-color: #0065FC;
+}
+
+/****************FILTRES***********/
+
+#iconinfo
+{
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 100%;
+    padding: 3px 8px 3px 8px;
+    margin-right: 10px;
+}
+
+/**************1erSection************/
+
+section
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/**************1ereaside**************/
+
+#Hébergements
+{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 60vw;
+    height: 100%;
+    margin-right: 20px;
+}
+.imagesHébergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+.imagesHébergements figure
+{
+    background-color: white;
+    width: calc(30% - 25px);
+    border: 4px white solid;
+    border-radius: 20px;
+    box-shadow: 1px 2px 10px rgb(203, 203, 201);
+    margin: 17px;
+}
+
+#Hébergements img
+{
+    border-radius: 20px 20px 0 0;
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+}
+#Hébergements p
+{
+    margin: 5px 0 5px 5px;
+}
+#Hébergements h3
+{
+    margin: 5px 0 0 5px;
+}
+#Hébergements h2
+{
+    font-weight: bold;
+    padding: 40px 0 0 40px;
+    font-size: 23px;
+    width: 50%;
+    margin-bottom: 10px;
+}
+.stars
+{
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+.stars i
+{
+    font-size: 11px;
+    background-color: white;
+    padding: 0;
+}
+.empty
+{
+    color: rgba(128, 128, 128, 0.3);
+}
+#more
+{
+    font-weight: bold;
+    font-size: large;
+    padding: 25px 0 0 40px;
+}
+
+/***************2ndAside*****************/
+
+#LesPlusPopulaires
+{
+    background-color: #F2F2F2;
+    width: 30vw;
+    height: 100%;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.imagesLesPlusPopulaires
+{
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+#LesPlusPopulaires figure
+{
+    background-color: white;
+    width: 80%;
+    border: 4px white solid;
+    border-radius: 20px;
+    box-shadow: 1px 2px 10px rgb(203, 203, 201);
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#LesPlusPopulaires h2
+{
+    padding: 40px 0 0 35px;
+    font-size: 23px;
+    font-weight: bold;
+}
+#LesPlusPopulaires h2 i
+{
+    background-color: #F2F2F2;
+    color: black;
+    font-size: 20px;
+    float: right;
+    margin-right: 20px;
+    padding: 0;
+}
+#LesPlusPopulaires img
+{
+    border-radius: 20px 0 0 20px;
+    height: 150px;
+    width: 35%;
+    object-fit: cover;
+    padding: 0 20px 0 0;
+}
+#LesPlusPopulaires h3
+{
+    margin: 5px 10px 0 5px;
+}
+#LesPlusPopulaires p
+{
+    margin: 10px 0 0 5px;
+}
+#LesPlusPopulaires .stars
+{
+    margin-top: 45px;
+}
+
+/*************2ndSection***************/
+
+#Activités h2
+{
+    margin: 70px 0 5px 40px;
+}
+.imagesActivités
+{
+    display: flex;
+    justify-content: center;
+}
+.imagesActivités img
+{
+    border-radius: 20px 20px 0 0;
+}
+#Activités figure
+{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 2px 10px rgb(237, 237, 236);
+    width: 21vw;
+    margin: auto;
+    margin: 17px;
+}
+#Activités h4
+{
+    margin: 15px 0 15px 20px;
+    font-weight: bold;
+    font-size: large;
+}
+.XgrandeImage
+{
+    height: 410px;
+    width: 21vw;
+    object-fit: cover;
+}
+.grandeImage
+{
+    height: 200px;
+    width: 21vw;
+    object-fit: cover;
+}
+.moyenneImage
+{
+    height: 160px;
+    width: 21vw;
+    object-fit: cover;
+}
+.petiteImage
+{
+    height: 120px;
+    width: 21vw;
+    object-fit: cover;
+}
+.collum
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/**************FOOTER*************/
+
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    width: 100%;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+footer li
+{
+    padding: 5px 0 5px 0;
+    font-size: large;
+}
+footer ul
+{
+    margin: auto;
+    margin-left: 0;
+}
+.titresFooter
+{
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+/****************RESPONSIVE***********/
+
+@media screen and (min-width: 992px)
+{
+    #phone
+    {
+        display: none;
+    }
+    #titrefiltre
+    {
+        float: left;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1052px)
+{
+    #filtres
+    {
+        font-size: medium;
+        padding: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1250px)
+{
+    #LesPlusPopulaires .stars
+    {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1095px)
+{
+    #LesPlusPopulaires h3
+    {
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1220px)
+{
+    #LesPlusPopulaires .stars
+    {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1245px)
+{
+    #small
+    {
+       height: 200px;
+    }
+    #medium
+    {
+        height: 240px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.9px)
+{
+    h2, p
+    {
+        text-align: center;
+    }
+    form
+    {
+        justify-content: center;
+    }
+    #phone
+    {
+        display: none;
+    }
+    #filtres
+    {
+        justify-content: center;
+    }
+    #Hébergements
+    {
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #LesPlusPopulaires
+    {
+        width: 100%;
+        margin: 0;
+    }
+    aside
+    {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    #Hébergements h2
+    {
+        width: 80%;
+    }
+    #Hébergements figure
+    {
+        width: 40vw;
+        margin: 20px;
+    }
+    #Hébergements img
+    {
+        height: 150px;
+        width: 40vw;
+    }
+    #LesPlusPopulaires img
+    {
+        width: 35vw;
+    }
+    #LesPlusPopulaires figure
+    {
+        width: 80vw;
+    }
+    #Activités figure
+    {
+        margin: 0;
+        margin-left: 20px;
+        margin-bottom: 40px;
+        width: auto;
+    }
+    .XgrandeImage
+    {
+        height: 250px;
+        width: 80vw;
+        object-fit: cover;
+    }
+    .grandeImage
+    {
+        height: 250px;
+        width: 40vw;
+        object-fit: cover;
+    }
+    .moyenneImage
+    {
+        height: 250px;
+        width: 40vw;
+        object-fit: cover;
+    }
+    .petiteImage
+    {
+        height: 250px;
+        width: 40vw;
+        object-fit: cover;
+    }
+    #Activités h2
+    {
+        margin-bottom: 50px;
+    }
+    .collum
+    {
+        flex-direction: row;
+    }
+    .imagesActivités
+    {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    section
+    {
+        flex-direction: column-reverse;
+    }
+    nav a:hover
+    {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+    }
+    nav h1
+    {
+        margin-left: 40%;
+    }
+    nav a
+    {
+        padding-bottom: 10px;
+    }
+    #form
+    {
+        margin-left: -30px;
+    }
+    nav ul
+    {
+        margin-bottom: 50px;
+        width: 60%;
+    }
+    nav li
+    {
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 10px;
+        padding-top: 43px;
+        margin-left: -30px;
+    }
+    #en-tête h2
+    {
+        margin-top: 100px;
+        margin-left: -30px;
+    }
+    #en-tête p
+    {
+        margin-left: -30px;
+    }
+    #all-screen
+    {
+        display: none;
+    }
+    #phone
+    {
+        border-radius: 15px;
+        margin-left: -40px;
+        padding: 4px;
+    }
+    #phone i
+    {
+        background-color: #0065FC;
+        color: white;
+    }
+    #titrefiltre
+    {
+        margin-left: -30px;
+    }
+    #filtres
+    {
+        margin-left: -80px;
+    }
+    h2, p
+    {
+        margin-bottom: 20px;
+    }
+    aside
+    {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    #Hébergements
+    {
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+    #Hébergements figure
+    {
+        width: 80vw;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    #Hébergements img
+    {
+        width: 80vw;
+        height: 30vw;
+    }
+    #Hébergements p
+    {
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+    #Hébergements h3
+    {
+        font-size: medium;
+    }
+    #LesPlusPopulaires
+    {
+        width: 100%;
+        height: 700px;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+    #LesPlusPopulaires h2
+    {
+        margin-left: 10px;
+    }
+    #LesPlusPopulaires img
+    {
+        width: 40%;
+        height: 150px;
+    }
+    #LesPlusPopulaires h3
+    {
+        font-size: medium;
+    }
+    #LesPlusPopulaires p
+    {
+        font-size: 15px;
+    }
+    .imagesActivités
+    {
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 60px;
+    }
+    #Activités figure
+    {
+        width: 100%;  
+    }
+    #Activités img
+    {
+        height: 30vw;
+        width: 100%;
+    }
+    footer ul
+    {
+       width: 100%;
+       margin-left: -15px; 
+    }
+    footer li
+    {
+        padding: 5px;
+        font-size: medium;
+    }
+    .titresFooter
+    {
+        padding-top: 40px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 376px)
+{
+    #LesPlusPopulaires .stars
+    {
+        margin: 0;
+    }
+    #LesPlusPopulaires p
+    {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    input
+    {
+        font-size: 4vw;
+    }
+    nav ul
+    {
+        flex-direction: column;
+        margin: 20px;
+        font-size: small;
+        display: none;
+    }
+    #filtres
+    {
+        font-size: medium;
+    }
+    #Activités
+    {
+        width: 100%;
+    }
+    #Activités h4
+    {
+        font-size: medium;
+    }
+}
